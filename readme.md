@@ -16,17 +16,6 @@ O sistema é composto por dois microserviços independentes:
 
 ---
 
-## **1️⃣ pessoa-service**
-
-Responsável por:
-
-- Cadastro, atualização, listagem, busca e exclusão de pessoas  
-- Validações: CPF único, idade mínima 18 anos  
-- Integração com boleto-service via **OpenFeign** para consultar boletos  
-- Geração de **relatório PDF** com JasperReports  
-
----
-
 ## **2️⃣ boleto-service**
 
 Responsável por:
@@ -40,8 +29,9 @@ Responsável por:
 
 ## Comunicação entre microserviços
 
-O `pessoa-service` se comunica com o `boleto-service` via HTTP usando Spring Cloud OpenFeign:
-`` 
+O `pessoa-service` se comunica com o `boleto-service` via HTTP usando **Spring Cloud OpenFeign**:
+
+```
 
 pessoa-service → boleto-service
 
