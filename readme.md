@@ -86,20 +86,13 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 # 👤 Pessoa (pessoa-service)
 
 ### Campos
-
+```
 | Campo | Obrigatório | Observações |
 | -------- | ------- | -------- |
 | nome | ✔️ | - |
 | cpf | ✔️ | Apenas números, 11 dígitos, não duplicado |
 | dataNascimento | ✔️ | Idade mínima: 18 anos |
 | cep / logradouro / bairro / uf / cidade | ❌ | opcionais |
-
-
-### globo_play
-| username | password| 
-| -------- | ------- |
-| albuquerque.bry.n@gmail.com  | #Samael2025# |
-
 
 
 ### Regras
