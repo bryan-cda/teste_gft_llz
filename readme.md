@@ -8,13 +8,10 @@ Este repositório implementa o desafio prático envolvendo dois microserviços J
 
 O projeto foi desenvolvido com foco em clareza, separação de responsabilidades, alto nível de qualidade arquitetural e facilidade de execução.
 
----
 
 # 🏗 Arquitetura Geral
 
 O sistema é composto por dois microserviços independentes:
-
----
 
 ## **2️⃣ boleto-service**
 
@@ -25,7 +22,6 @@ Responsável por:
 - Atualização automática de boletos vencidos via **Scheduler diário (01:00)**  
 - Ordenação de boletos por data de vencimento  
 
----
 
 ## Comunicação entre microserviços
 
@@ -36,11 +32,7 @@ pessoa-service → boleto-service
 
 Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado via Docker.
 
----
-
 # 📁 Estrutura do Repositório
-
-
 
 .
 ├── docker-compose.yml
@@ -59,8 +51,6 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 ├── main/java/...
 └── test/java/...
 
-
----
 
 # 🧪 Tecnologias Utilizadas
 
@@ -90,18 +80,15 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 ### **PDF**
 - JasperReports  
 
----
-
 # 📜 Regras de Negócio
 
----
 
 # 👤 Pessoa (pessoa-service)
 
 ### Campos
 
 | Campo | Obrigatório | Observações |
-|-------|-------------|-------------|
+| -------- | ------- | -------- |
 | nome | ✔️ | - |
 | cpf | ✔️ | Apenas números, 11 dígitos, não duplicado |
 | dataNascimento | ✔️ | Idade mínima: 18 anos |
