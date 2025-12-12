@@ -40,9 +40,8 @@ Responsável por:
 
 ## Comunicação entre microserviços
 
-O `pessoa-service` se comunica com o `boleto-service` via HTTP usando *Spring Cloud OpenFeign*:
+O `pessoa-service` se comunica com o `boleto-service` via HTTP usando Spring Cloud OpenFeign:
 
-```
 
 pessoa-service → boleto-service
 
