@@ -31,11 +31,8 @@ Responsável por:
 
 O `pessoa-service` se comunica com o `boleto-service` via HTTP usando **Spring Cloud OpenFeign**:
 
-```
-
 pessoa-service → boleto-service
 
-```
 
 Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado via Docker.
 
