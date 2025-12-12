@@ -1,6 +1,3 @@
-Perfeito, Bryan. Aqui está o **README.md unificado**, completo, profissional e pronto para ser colocado **na raiz do seu repositório**, representando TODO o projeto (os dois micros + docker-compose + instruções + arquitetura + autor).
-
-Você pode copiar e colar exatamente como está no GitHub.
 
 ---
 
