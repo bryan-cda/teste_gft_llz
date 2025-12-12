@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  postgres-pessoa:
+    image: postgres:16-alpine
+    container_name: postgres-pessoa
+    environment:
+      POSTGRES_DB: pessoa_db
+      POSTGRES_USER: pessoa_user
+      POSTGRES_PASSWORD: pessoa_password
+    ports:
+      - "5433:5432"
+
+  postgres-boleto:
+    image: postgres:16-alpine
+    container_name: postgres-boleto
+    environment:
+      POSTGRES_DB: boleto_db
+      POSTGRES_USER: boleto_user
+      POSTGRES_PASSWORD: boleto_password
+    ports:
+      - "5434:5432"
+
+  boleto-service:
+    build: ./boleto-service
+    container_name: boleto-service
+    depends_on:
+      - postgres-boleto
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-boleto:5432/boleto_db
+      SPRING_DATASOURCE_USERNAME: boleto_user
+      SPRING_DATASOURCE_PASSWORD: boleto_password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SERVER_PORT: 8081
+
+  pessoa-service:
+    build: ./pessoa-service
+    container_name: pessoa-service
+    depends_on:
+      - postgres-pessoa
+      - boleto-service
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-pessoa:5432/pessoa_db
+      SPRING_DATASOURCE_USERNAME: pessoa_user
+      SPRING_DATASOURCE_PASSWORD: pessoa_password
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+      SERVER_PORT: 8080
+      BOLETO_SERVICE_URL: http://boleto-service:8081
+    ports:
+      - "8080:8080"
