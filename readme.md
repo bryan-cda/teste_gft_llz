@@ -124,6 +124,12 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 | dataNascimento                          | ✔️          | Idade mínima: 18 anos                      |
 | cep / logradouro / bairro / uf / cidade | ❌          | Campos opcionais                           |
 
+## cpf_mae
+| Campo | Obrigatório| Observações|
+| -------- | ------- |
+| keli duarte  |02049433700    | nao
+
+
 
 
 ### Regras
