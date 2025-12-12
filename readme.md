@@ -117,17 +117,31 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 
 ### Campos
 
-| Campo                                   | Obrigatório | Observações                               |
-|-----------------------------------------|-------------|--------------------------------------------|
-| nome                                    | ✔️          | —                                          |
-| cpf                                     | ✔️          | Apenas números, 11 dígitos, não duplicado |
-| dataNascimento                          | ✔️          | Idade mínima: 18 anos                      |
-| cep / logradouro / bairro / uf / cidade | ❌          | Campos opcionais                           |
+### Campos
 
-## cpf_mae
-| Campo | Obrigatório| Observações|
-| -------- | ------- |
-| keli duarte  |02049433700    | nao
+nome
+
+Obrigatório: ✔️
+
+Observações: —
+
+cpf
+
+Obrigatório: ✔️
+
+Observações: Apenas números, 11 dígitos, não duplicado
+
+dataNascimento
+
+Obrigatório: ✔️
+
+Observações: Idade mínima: 18 anos
+
+cep / logradouro / bairro / uf / cidade
+
+Obrigatório: ❌
+
+Observações: Campos opcionais
 
 
 
@@ -314,15 +328,4 @@ mvn test
 📧 **[albuquerque.bry.n@gmail.com](mailto:albuquerque.bry.n@gmail.com)**
 🐙 GitHub: **[https://github.com/bryan-cda](https://github.com/bryan-cda)**
 
-```
-
----
-
-Se quiser, posso gerar também:
-
-- **Badges de GitHub (Java, Spring, Docker, Build Passing, etc.)**  
-- Um **diagrama da arquitetura (mermaid)**  
-- Uma versão **em inglês** para vagas internacionais  
-
-Quer adicionar algo?
 ```
