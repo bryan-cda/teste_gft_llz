@@ -30,6 +30,7 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 
 # 📁 Estrutura do Repositório
 
+```
 .
 ├── docker-compose.yml
 ├── README.md  ← (este arquivo)
@@ -48,7 +49,7 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 └── test/java/...
 
 
-# 🧪 Tecnologias Utilizadas
+#``` 🧪 Tecnologias Utilizadas
 
 ### **Backend**
 - Java 17  
