@@ -49,7 +49,7 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 └── test/java/...
 
 
-#🧪 Tecnologias Utilizadas
+#Tecnologias Utilizadas
 
 ### **Backend**
 - Java 17  
