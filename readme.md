@@ -117,12 +117,13 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 
 ### Campos
 
-| Campo | Obrigatório | Observações |
-|-------|-------------|-------------|
-| nome | ✔️ | - |
-| cpf | ✔️ | Apenas números, 11 dígitos, não duplicado |
-| dataNascimento | ✔️ | Idade mínima: 18 anos |
-| cep / logradouro / bairro / uf / cidade | ❌ | opcionais |
+| Campo                                   | Obrigatório | Observações                               |
+|-----------------------------------------|-------------|--------------------------------------------|
+| nome                                    | ✔️          | —                                          |
+| cpf                                     | ✔️          | Apenas números, 11 dígitos, não duplicado |
+| dataNascimento                          | ✔️          | Idade mínima: 18 anos                      |
+| cep / logradouro / bairro / uf / cidade | ❌          | Campos opcionais                           |
+
 
 ### Regras
 
