@@ -86,13 +86,15 @@ Cada serviço possui seu próprio banco **PostgreSQL**, isolado e configurado vi
 # 👤 Pessoa (pessoa-service)
 
 ### Campos
-```
-| Campo | Obrigatório | Observações |
-| -------- | ------- | -------- |
-| nome | ✔️ | - |
-| cpf | ✔️ | Apenas números, 11 dígitos, não duplicado |
-| dataNascimento | ✔️ | Idade mínima: 18 anos |
-| cep / logradouro / bairro / uf / cidade | ❌ | opcionais |
+
+| Campo | Obrigatório | Regras |
+|--------|--------------|--------|
+| pessoaId | ✔️ | Relacionamento |
+| valorDocumento | ✔️ | > 0 |
+| dataVencimento | ✔️ | >= hoje |
+| status | ✔️ | PENDENTE, PAGO, VENCIDO |
+| valorPago | ❌ | - |
+| dataPagamento | ❌ | - |
 
 
 ### Regras
