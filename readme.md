@@ -169,14 +169,41 @@ Observações: Campos opcionais
 
 ### Campos
 
-| Campo | Obrigatório | Regras |
-|--------|--------------|--------|
-| pessoaId | ✔️ | Relacionamento |
-| valorDocumento | ✔️ | > 0 |
-| dataVencimento | ✔️ | >= hoje |
-| status | ✔️ | PENDENTE, PAGO, VENCIDO |
-| valorPago | ❌ | - |
-| dataPagamento | ❌ | - |
+pessoaId
+
+Obrigatório: ✔️
+
+Regras: Deve referenciar uma pessoa existente (relacionamento)
+
+valorDocumento
+
+Obrigatório: ✔️
+
+Regras: Deve ser maior que 0
+
+dataVencimento
+
+Obrigatório: ✔️
+
+Regras: Deve ser maior ou igual à data atual
+
+status
+
+Obrigatório: ✔️
+
+Regras: Valores permitidos → PENDENTE, PAGO, VENCIDO
+
+valorPago
+
+Obrigatório: ❌
+
+Regras: Preenchido apenas em pagamento
+
+dataPagamento
+
+Obrigatório: ❌
+
+Regras: Preenchida apenas em pagamento
 
 ### Pagamento
 
